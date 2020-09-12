@@ -29,6 +29,7 @@ d3.json(queryUrl, function (geoJson) {
             layer.bindPopup("<h3>Earthquake: " + feature.properties.place + "</h3><hr><p>Time: " + new Date(feature.properties.time) + "</p><hr><p>Magnitude: " + feature.properties.mag + "</p><hr><p>Significance: " + feature.properties.sig + "</p>");
         }
     }).addTo(earthquakes);
+
     createMap(earthquakes);
 });
 
